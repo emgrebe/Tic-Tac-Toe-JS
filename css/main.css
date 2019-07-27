@@ -1,1 +1,35 @@
-commit
+h1 {
+  text-align: center;
+}
+
+table, td {
+  border: 1px solid black;   
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr.first {
+  border-bottom: 1px solid black;
+}
+
+tr.second {
+  border-bottom: 1px solid black;
+}
+
+tr.third {
+
+}
+
+td {
+  padding: 15px;  
+}
+
+button {
+  color: white;
+  background-color: black;
+  margin-top: 5vmin;
+}
+
