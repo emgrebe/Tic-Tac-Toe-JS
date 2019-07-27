@@ -1,14 +1,16 @@
 /*----- constants -----*/ 
-// const players = {
-//     '0': 'white',
-//     '1': 'x',
-//     '2': 'o'
-// }
+const SYMBOL = {
+  '1': 'X',
+  '-1': 'O',
+  'null': ''
+}
+
+
 
 /*----- app's state (variables) -----*/ 
-// let board, turn, winner;
+let table, turn, winner;
 
-// var resetButton = document.getElementById('reset';
+var resetButton = document.getElementById('reset');
 
 /*----- cached element references -----*/ 
 
