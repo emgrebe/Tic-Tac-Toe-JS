@@ -11,30 +11,42 @@
 </head>
 
 <body>
-  <h1>Tic Tac Toe</h1>
+    <div class="game">
+        <div class="game-title">Tic Tac Toe</div>
+        <div class="player" style="font-size:40pt">
+            Player 1
+            <div style="font-size:40pt;" id="player1" class="selected">
+            0
+            </div>
+        </div>
+                
+        <table id="game" class="tictactoe" style="float:left;width:45%;">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
 
-    <table>
-      <tr class='first'>
-        <td id='sq1'></td>
-        <td id='sq0'></td>
-        <td id='sq2'></td>   
-    </tr>
-    <tr class='second'>
-        <td id='sq3'></td>
-        <td id='sq4'></td>
-        <td id='sq5'></td>
-    </tr>
-    <tr class='third'>    
-        <td id='sq6'></td>
-        <td id='sq7'></td>
-        <td id='sq8'></td>
-    </tr>
-    </table>
-
-  <footer>
-    <button id='reset'>RESET</button>
-  </footer>
-
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+                
+        <div class="player" style="font-size:40pt">
+            Player 2
+            <div id="player2" style="font-size:40pt;">0</div>
+        </div>
+                
+        <div class="clear"></div>
+    </div>
+    <button name='reset'>RESET GAME</button>
 </body>
-
 </html>
