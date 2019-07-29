@@ -99,33 +99,32 @@ function checkWinner() {
     playerSelections = player1Selections;
   else
     playerSelections = player2Selections;
+    if(playerSelections.length >= size) {
 
-  if(playerSelections.length >= size) {
-
-  for(i = 0; i < winners.length; i++) {
-    var sets = winners[i];
-    var setFound = true;
-
-    for(r = 0; r < sets.length; r++) {
-      var found = false;
-
-    for(s = 0; s < playerSelections.length; s++) {
-      if(sets[r] ==playerSelections[s]) {
-        found = true;
-        break;
+      for(i = 0; i < winners.length; i++) {
+        var sets = winners[i];
+        var setFound = true;
+    
+        for(r = 0; r < sets.length; r++) {
+          var found = false;
+    
+        for(s = 0; s < playerSelections.length; s++) {
+          if(sets[r] ==playerSelections[s]) {
+            found = true;
+            break;
+          }
+        }
+        if(found == false) {
+          setFound = false;
+          break;
+        }
+        }
+        if(setFound == true) {
+          win = true;
+          break;
+        }
       }
+      }
+      return win;
     }
-    if(found == false) {
-      setFound = false;
-      break;
-    }
-    }
-    if(setFound == true) {
-      win = true;
-      break;
-    }
-  }
-  }
-  return win;
-}
-window.addEventListener('load', drawBoard);
+    window.addEventListener('load', drawBoard);
